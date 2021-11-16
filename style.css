@@ -1,0 +1,169 @@
+/* reset css  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* styleing of navbar  */
+.nav-bar{
+    width: 100vw;
+    background-color: rgba(180, 146, 146, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    position: relative;
+}
+.toglle{
+    position: absolute;
+    right: 11px;
+    top:-10px;
+    display: none;
+    font-size: 41px;
+}
+ /* styling of logo  */
+ .nav-bar .logo{
+     font-size: 14px;
+     font-family: sans-serif;
+     letter-spacing: 2px;
+ }
+ .nav-bar .logo .span-logo{
+    color: rgb(71 159 193);
+     font-size: 20px;
+     font-weight: bolder;
+     letter-spacing: 1px;
+ }
+ .menus > ul{
+     list-style: none;
+ }
+ .menus > ul > li{
+     display: inline-block;
+     text-transform: capitalize;
+     font-family: 'Times New Roman', Times, serif;
+     padding: 10px 15px;
+     letter-spacing: 1px;
+     font-weight: 600;
+     font-size: 17px;
+     cursor: pointer;
+     outline: none;
+     transition: all 0.7s ease-in-out;
+
+ }
+.menus > ul > li:hover{
+    color: lightgreen;
+    background-color: blanchedalmond;
+}
+.menus >ul >li:nth-child(2)::after{
+    content: '+';
+}
+/* making responsive  */
+@media screen and (max-width:470px) {
+    .nav-bar{
+        display: block;
+    }
+    .menus > ul > li{
+        display: block;
+    }
+    .menus > ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .toglle{
+        display: block;
+    }
+    .menus{
+        height: 7px;
+        overflow: hidden;
+        transition: height 1s ease-in-out;
+    } 
+    .submenus{
+       position: static !important;
+    }  
+}
+
+/* our word counter work start here  */
+.main-heading{
+    width: 100%;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+.main-heading h1{
+    text-align: center;
+    padding: 10px 3px;
+    font-size: 23px;
+    font-family: cursive;
+}
+.all-content{
+    display: flex;
+    /* background-color: red; */
+    margin-left: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.all-content-textarea textarea{
+    border: 2px solid gray;
+    outline: none;
+    border-radius: 2px;
+    resize: none;
+    width: 60vw;
+    font-size: 20px;
+    
+}
+.dynimc-button{
+    margin-left: 10px;
+    padding: 10px;
+    /* border: 2px solid; */
+}
+.dynimc-button p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+.dynimc-button .span{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+}
+
+/* styling of submenus */
+.submenus-li{
+    position: relative;
+    transition: display 1s ease-in-out;
+}
+.submenus{
+    /* display: none; */
+    position: absolute;
+    background: green;
+    width: 10rem;
+    display: none;
+    /* transition: display 1s ease-in-out; */
+    
+}
+.submenus li{
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px 3px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    list-style: none;
+    
+}
+.submenus li a{
+    text-decoration: none;
+    color: black;
+}
+/* space remover styling  */
+.display{
+    display: block;
+}
+.p{
+    text-transform: capitalize;
+}
+
+

@@ -1,0 +1,16 @@
+            <div class="main-heading">
+                <h1>Space Remover (In progress....)</h1>
+            </div>
+            <div class="all-content dynmic-button display">
+                <div class="all-content-textarea">
+                    <textarea name="textarea" id="textarea" cols="70" rows="13" placeholder="Find the Words"></textarea>
+                </div>
+                <div>
+                <p class='p'> all conten are here </p>
+                </div>
+                 <div class="all-content-textarea">
+                    <textarea name="textareaTwo" id="textareaTwo" cols="10" rows="13" placeholder="Find the Words"></textarea>
+                </div>
+                
+            </div>
+            
